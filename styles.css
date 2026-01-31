@@ -10,9 +10,20 @@ body{
 }
 
 /* Header section */
+
+.logo-img{
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    width: 70px;
+    height: auto;
+}
+
 .first-container {
     margin-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     border-bottom: solid 2px #d3d3d3;
     display: flex;
     justify-content: space-between;
@@ -27,9 +38,11 @@ body{
 .navbar{
     list-style: none;
     display: flex;
-    gap: 50px;
-    font-size: 20px;
+    gap: 40px;
+    font-size: 14px;
+    color: darkolivegreen;
     font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
 }
 
 .Sign-in-btn{
@@ -83,12 +96,17 @@ body{
 
 .hero-lists{
     list-style: none;
-    display: flex;
+    display: flex;;
     flex-direction: column;
     gap: 10px;
     font-size: 13px;
     font-family: Arial, Helvetica, sans-serif;
-    margin-left: 20px;
+}
+
+.checkmark{
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
 }
 
 .hero-buttons{
@@ -244,4 +262,5 @@ body{
     padding: 40px 20px;
     display: flex;
     justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
 }
