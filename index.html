@@ -14,20 +14,31 @@
 
     <!-- Header Section -->
     <header class="first-container">
-       <div class="logo-img">
-        <img src="logo.png" alt="logo" class="logo">
-        <div class="freshbasket">
-            <h1>FreshBasket Market</h1>
+        <div class="mobileview">
+        <div class="logo-img">
+            <img src="logo.png" alt="logo" class="logo">
+            <div class="freshbasket">
+                <h1>FreshBasket Market</h1>
+            </div>
         </div>
-       </div>
 
-       <nav class="nav-items">
+       <!-- Menu icon -->
+        <div class="menu-icon" id="menuIcon">
+            ☰
+        </div>
+        </div>
+
+       <!-- Nav -->
+        <nav class="nav-items" id="navMenu">
         <ul class="navbar">
-            <li><a>How it works</a></li>
-            <li><a>Shop by aisle</a></li>
-            <li><a>Why customers love us</a></li>
+            <li><a href="#">How it works</a></li>
+            <li><a href="#">Shop by aisle</a></li>
+            <li><a href="#">Why customers love us</a></li>
         </ul>
-       </nav>
+        <div>
+        <button class="Sign-in-btns">Sign In</button>
+       </div>
+    </nav>
 
        <div>
         <button class="Sign-in-btn">Sign In</button>
@@ -161,6 +172,17 @@
                 <p>© 2025 FreshBasket Market. All rights reserved.</p>
                 <p>Trusted by busy families, students and professionals in major cities.</p>
             </div>
+        </footer>
+
+        <script>
+    const menuIcon = document.getElementById('menuIcon');
+    const navMenu = document.getElementById('navMenu');
+
+    menuIcon.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+    });
+</script>
+
 
 </body>
 </html>

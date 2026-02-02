@@ -36,6 +36,12 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.menu-icon {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
 .navbar{
     list-style: none;
     display: flex;
@@ -45,6 +51,10 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
 }
+
+.navbar a{
+    text-decoration: none;
+    color: darkolivegreen;}
 
 .Sign-in-btn{
     padding: 0.625rem 1.25rem; /* 10px 20px */
@@ -56,6 +66,11 @@ body{
     cursor: pointer;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+.Sign-in-btns {
+        display: none;
+    }
+
 
 
 /* Hero section */
@@ -145,11 +160,12 @@ body{
     font-size: 0.875rem;
 }
 
+
+
  /* First Section */
 .main-section{
    background-color: #e0f2f2;
    padding: 1.875rem; /* 30px */
-
 }
 
 .firstsection-head{
@@ -204,6 +220,7 @@ body{
 }
 
 
+
 /* second-section */
 .second-section{
     background-color: #f9f6f6;
@@ -219,6 +236,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     margin-left: 0.625rem; /* 10px */
 }
+
 
 
 /* third section */
@@ -265,8 +283,9 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     padding: 0.625rem 1.25rem;
     font-size: 0.875rem;
- 
 }
+
+
 
 /* Footer section */
 .footer-content{
@@ -280,12 +299,14 @@ body{
 
 
 
+
 /* Tablets (601px – 900px) */
 @media (max-width: 900px) {
 
-    body {
-        width: 80%;
+body {
+    width: 80%;
     }
+
 .logo{
    width: 3rem; /* 48px */
     height: auto;
@@ -297,7 +318,7 @@ body{
 }
 
 .freshbasket{
-    font-size: 0.6rem; /* 10px */
+    font-size: 0.5rem; /* 8px */
 }
 
 .navbar{
@@ -311,9 +332,10 @@ body{
     font-size: 0.8rem;
 }
 
+
     /* Hero section*/
-    .hero-section {
-        flex-direction: column;
+.hero-section {
+    flex-direction: column;
     }
 
     .top {
@@ -336,7 +358,7 @@ body{
     }
 
     .step {
-        width: 48%;
+        width: 80%;
     }
 
     /* Third section */
@@ -345,17 +367,46 @@ body{
     }
 
     .third-para {
-        width: 85%;
+        width: 80%;
     }
 }
 
 
 /* Mobile phones (≤ 600px) */
+
+
 @media (max-width: 600px) {
 
     body {
-        width: 95%;
+        width: 70%;
     }
+
+.mobileview{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    width: 100%;
+}
+.freshbasket{
+    width: 50%;
+}
+
+    /* Show menu icon */
+    .menu-icon {
+        display: block;
+    }
+
+    /* Hide nav by default */
+    .nav-items {
+        display: none;
+        width: 100%;
+    }
+
+    /* When active */
+    .nav-items.active {
+        display: block;
+    }
+
 
     /* Header */
     .first-container {
@@ -367,6 +418,24 @@ body{
     .navbar {
         flex-direction: column;
         gap: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .Sign-in-btn {
+        display: none;
+    }
+
+    .Sign-in-btns {
+    display: block;
+    width: 100%;
+    padding: 0.625rem 1.25rem; /* 10px 20px */
+    font-size: 0.875rem;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
     }
 
     /* Hero */
@@ -393,6 +462,7 @@ body{
         align-items: stretch;
     }
 
+
     /* First & Second Sections */
     .firstsection-steps {
         flex-direction: column;
@@ -401,6 +471,7 @@ body{
     .step {
         width: 100%;
     }
+
 
     /* Third Section */
     .third-section-content {
@@ -418,4 +489,3 @@ body{
         text-align: center;
     }
 }
-
